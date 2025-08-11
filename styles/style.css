@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 2.5rem;
+}
+header img{
+    width: 50%;
+}
+header > div span{
+    font-size: 1.37rem;
+    font-weight: 500;
+    color : #262626;
+    text-decoration: underline;
+ 
+}
+header > div h1{
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #1A1A1A;
+    line-height: 130%;
+    margin-top: 0.5rem;
+}
+header > div > p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    box-shadow: 8px 8px 0px 1px #FFBE99;
+    background-color: #FFEFE5;
+    border-radius: 12px;
+    border: 2px solid black;
+    gap: 1rem;
+}
+.header-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-container div h2{
+    font-size: 2rem;
+    color:#262626;
+    line-height: 130%;
+    font-weight: 800;
+}
+.header-container div p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #262626;
+}
+@media screen and (max-width:599px){
+    header{
+        flex-wrap: wrap;
+    }
+    header img{
+    width: 100%;
+    }
+}
