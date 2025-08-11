@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Inter;
 }
+body{
+    background-color: #f8efe8;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -63,7 +66,7 @@ header > div > p{
     font-weight: 800;
 }
 .header-container div p{
-    font-size: 14px;
+    font-size: 0.85rem;
     font-weight: 500;
     line-height: 150%;
     color: #262626;
@@ -75,4 +78,89 @@ header > div > p{
     header img{
     width: 100%;
     }
+}
+main{
+    margin-top: 5rem;
+}
+.first-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.2rem;
+}
+.first-section-first-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+}
+.first-section-first-div button{
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1.12rem;
+    font-weight: 500;
+    line-height: 150%;
+    justify-content: center;
+}
+.first-section-first-div h1{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 130%;
+    color: #1A1A1A;
+}
+.first-section-first-div p{
+    padding: 0 150px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: #333333;
+    text-align: center;
+}
+.first-section-second-div-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 50px;
+   
+}
+.first-section-second-div-container div{
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    padding: 80px 30px 50px 30px;
+    border-radius: 12px;
+    position: relative;
+}
+.first-section-second-div-container div img{
+    position: absolute;
+    background-color: #FFDECC;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    padding: 20px;
+    top: -40px;
+    left: 30px;
+}
+.first-section-second-div-container div h3{
+    font-size:1.3rem;
+    font-weight: 700;
+    line-height: 130%;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+.first-section-second-div-container div p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 150%;
+    color: #4C4C4D;
+    text-align: left;
+}
+@media screen and (max-width:599px){
+ .first-section-first-div , .first-section-second-div ,  .first-section-second-div-container{
+    flex-wrap: wrap;
+ }
 }
