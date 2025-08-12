@@ -306,7 +306,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: center; */
     gap: 40px;
     padding-bottom: 30px;
     border-bottom: 1px solid #262626;
@@ -345,7 +344,7 @@ footer{
 .footer-first-div ul li{
     margin-bottom: 24px;
     font-size: 1rem;
-    columns: #262626;
+    color: #262626;
     line-height: 150%;
 }
 .footer-second-div{
@@ -370,8 +369,6 @@ footer{
     background-color: #FFDECC;
     border: 2px solid #262626;
     border-radius: 8px;
-    justify-content: center;
-    align-items: center;
 }
 .footer-second-div div button img{
     padding: 10px;
@@ -392,4 +389,7 @@ footer{
 @media screen and (max-width:900px){
     .footer-first-div , .footer-second-div  {
     flex-wrap: wrap; } 
+    footer{
+        margin: 20px;
+    }
 }
